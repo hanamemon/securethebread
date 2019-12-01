@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <script>
+    // Initialize and add the map
+    function initMap() {
+  var broadway = {
+    info: '<strong>Community Partnership for the Prevention of Homelessness</strong><br>\
+      1025 W Belmont Ave<br> College Park, MD 20740<br>\
+      <a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+    lat: 38.920366,
+    long: -76.966310,
+  }
+
+  var belmont = {
+    info: '<strong>National Center for Housing and Child Welfare</strong><br>\
+      1025 W Belmont Ave<br> College Park, MD 20740<br>\
+    <a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+    lat: 38.979279, 
+    long: -76.929357,
+  }
+
+  var sheridan = {
+    info: '<strong>Adams Place Emergency Shelter</strong><br>\
+      1025 W Belmont Ave<br> College Park, MD 20740<br>\
+    ,<a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+    lat: 38.960650,
+    long: -76.931855,
+  }
+
+  var locations = [
+    [broadway.info, broadway.lat, broadway.long, 0],
+    [belmont.info, belmont.lat, belmont.long, 1],
+    [sheridan.info, sheridan.lat, sheridan.long, 2],
+  ]
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: new google.maps.LatLng(38.992513, -76.952515),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+  })
+
+  var infowindow = new google.maps.InfoWindow({})
+
+  var marker, i
+
+  for (i = 0; i < locations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map,
+    })
+
+    google.maps.event.addListener(
+      marker,
+      'click',
+      (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0])
+          infowindow.open(map, marker)
+        }
+      })(marker, i)
+    )
+  }
+}
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDccxnawNr8so2HsVLRL6kxgX2eewKk6Fs&callback=initMap">
+    </script>
+  </body>
+</html>
