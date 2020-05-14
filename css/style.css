@@ -4,11 +4,9 @@
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
 body {
   background: #fff;
   color: #444;
@@ -48,9 +46,15 @@ h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+ iframe {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
+
+ }
 /* Back to top button */
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -74,7 +78,6 @@ h6 {
 }
 
 /* Prelaoder */
-
 #preloader {
   position: fixed;
   top: 0;
@@ -127,7 +130,6 @@ h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-
 #topbar {
   padding: 0 0 10px 0;
   font-size: 14px;
@@ -156,7 +158,6 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
 #header {
   height: 110px;
   transition: all 0.5s;
@@ -212,7 +213,6 @@ h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-
 #intro {
   width: 100%;
   height: 100vh;
@@ -250,9 +250,8 @@ h6 {
 }
 
 #intro .intro-info .eatingimg {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
-
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
@@ -262,9 +261,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-
 /* Desktop Navigation */
-
 .main-nav {
   /* Drop Down */
   /* Deep Drop Down */
@@ -277,7 +274,7 @@ h6 {
   list-style: none;
 }
 
-.main-nav > ul > li {
+.main-nav>ul>li {
   position: relative;
   white-space: nowrap;
   float: left;
@@ -296,8 +293,8 @@ h6 {
 }
 
 .main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
+.main-nav .active>a,
+.main-nav li:hover>a {
   color: #1bb1dc;
   text-decoration: none;
 }
@@ -316,7 +313,7 @@ h6 {
   transition: ease all 0.3s;
 }
 
-.main-nav .drop-down:hover > ul {
+.main-nav .drop-down:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -336,12 +333,12 @@ h6 {
 }
 
 .main-nav .drop-down ul a:hover,
-.main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
+.main-nav .drop-down ul .active>a,
+.main-nav .drop-down ul li:hover>a {
   color: #1bb1dc;
 }
 
-.main-nav .drop-down > a:after {
+.main-nav .drop-down>a:after {
   content: "\f107";
   font-family: FontAwesome;
   padding-left: 10px;
@@ -352,24 +349,23 @@ h6 {
   left: calc(100% - 30px);
 }
 
-.main-nav .drop-down .drop-down:hover > ul {
+.main-nav .drop-down .drop-down:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
 
-.main-nav .drop-down .drop-down > a {
+.main-nav .drop-down .drop-down>a {
   padding-right: 35px;
 }
 
-.main-nav .drop-down .drop-down > a:after {
+.main-nav .drop-down .drop-down>a:after {
   content: "\f105";
   position: absolute;
   right: 15px;
 }
 
 /* Mobile Navigation */
-
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -398,13 +394,13 @@ h6 {
 }
 
 .mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
   color: #8dc2fa;
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .drop-down>a:after {
   content: "\f078";
   font-family: FontAwesome;
   padding-left: 10px;
@@ -412,11 +408,11 @@ h6 {
   right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down>a:after {
   content: "\f077";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav .drop-down>a {
   padding-right: 35px;
 }
 
@@ -476,10 +472,8 @@ h6 {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-
 /* Sections Header
 --------------------------------*/
-
 .section-header h3 {
   font-size: 36px;
   color: #413e66;
@@ -500,14 +494,12 @@ h6 {
 
 /* Section with background
 --------------------------------*/
-
 .section-bg {
   background: #f5f8fd;
 }
 
 /* About Us Section
 --------------------------------*/
-
 #about {
   padding: 80px 0;
 }
@@ -587,7 +579,6 @@ h6 {
 
 /* Services Section
 --------------------------------*/
-
 #services {
   padding: 60px 0 40px 0;
 }
@@ -647,9 +638,6 @@ h6 {
 
 /* Why Us Section
 --------------------------------*/
-
-
-
 #why-us .why-us-content .features {
   margin: 0 0 15px 0;
   padding: 0;
@@ -697,7 +685,6 @@ h6 {
 
 /* Call To Action Section
 --------------------------------*/
-
 #call-to-action {
   background: #2d2b46;
   background-size: cover;
@@ -735,7 +722,6 @@ h6 {
 
 /* Features Section
 --------------------------------*/
-
 #features {
   padding: 80px 0;
 }
@@ -747,7 +733,6 @@ h6 {
 
 /* Portfolio Section
 --------------------------------*/
-
 #portfolio {
   padding: 60px 0;
 }
@@ -889,7 +874,6 @@ h6 {
 
 /* Testimonials Section
 --------------------------------*/
-
 #testimonials {
   padding: 60px 0;
 }
@@ -946,7 +930,6 @@ h6 {
 
 /* Team Section
 --------------------------------*/
-
 #team {
   padding: 60px 0;
 }
@@ -1028,7 +1011,6 @@ h6 {
 
 /* Clients Section
 --------------------------------*/
-
 #clients {
   padding: 60px 0;
 }
@@ -1065,7 +1047,6 @@ h6 {
 
 /* Pricing Section
 --------------------------------*/
-
 #pricing {
   padding: 80px 0;
 }
@@ -1168,7 +1149,6 @@ h6 {
 
 /* Frequently Asked Questions Section
 --------------------------------*/
-
 #faq {
   padding: 60px 0;
   overflow: hidden;
@@ -1220,7 +1200,6 @@ h6 {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
@@ -1455,7 +1434,6 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
-
 @media (min-width: 991px) {
   #call-to-action .cta-btn-container {
     display: -webkit-box;
